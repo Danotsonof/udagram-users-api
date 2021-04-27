@@ -19,5 +19,5 @@ script:
   - docker tag udagram_users danotsonof/udagram_users:latest
 
 #after_success:
-  #- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  #- docker push danotsonof/udagram_users
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push danotsonof/udagram_users
